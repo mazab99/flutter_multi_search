@@ -72,7 +72,7 @@ MultipleSearchSelection<Country>(
 
 ```dart
 // [T] here is [Country]
-createOptions: CreateOptions<Country>(
+createOptions: OptionItems<Country>(
     // You need to create and return the item you want to add since [T] is not always [String].
     createItem: (text) {
         return Country(name: text, iso: text);
